@@ -1,0 +1,456 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+@font-face {
+    font-family: "breve";
+    src: url("../fonts/BREVE2.ttf") format("truetype");
+}
+
+body{
+    
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    overflow-x:hidden;
+    color:rgba(240,240,240,1);
+    
+}
+
+/* HEADER AND LAYER ON HEADER */
+
+#header{
+    height:100vh;
+    width: 100%;
+    position: relative;
+    background-image: url(../img/tattoo1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin:0;
+    padding:0;
+    z-index: 0;
+}
+
+.layer{
+    position: absolute;
+    top:0;
+    height:100vh;
+    width:100%;
+    background-color: rgba(40,40,40,0.3);
+    z-index: 1;
+}
+
+.layer h1{
+    position:relative;
+    top:30%;
+    right:50%;
+    transform: translate(50%);
+    display:block;
+    text-align: center;
+    font-family: "breve";
+    letter-spacing: 15px;
+    font-size: 7em;
+    font-weight: 400;
+    color:rgba(240, 240, 240, 1);
+}
+
+.layer p{
+    position:relative;
+    top:28%;
+    display: block;
+    margin:0 auto;
+    letter-spacing: 23px;
+    max-width:600px;
+    color:rgba(240,240,240,1);
+    font-weight: 300;
+    text-align: center;
+}
+
+.logo{
+    position: absolute;
+    top:20px;
+    left:20px;
+    max-width:150px;
+    border-radius: 50%;
+    height:auto;
+    z-index: 9;
+}
+
+.layer a{
+    position: absolute;
+    font-size:2em;
+    left:50%;
+    bottom:100px;
+    transform: translate(-50%);
+    color:rgba(240,240,240,1);
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* MENU */
+
+.menuBtn{
+    position:fixed;
+    top:20px;
+    right:20px;
+    width:50px;
+    height:40px;
+    display:block;
+    z-index: 100;
+}
+
+.icon-line{
+    position:relative;
+    background-color:rgba(240,240,240,1);
+    display: block;
+    border-radius:12px;
+    width:30px;
+    height:4px;
+    opacity:1;
+    top:0;
+    left:10px;
+    margin-top:7px;
+    transition: 0.25s;
+}
+
+.open span:nth-child(1){
+    transform: rotate(45deg);
+    top:11px;
+}
+
+.open span:nth-child(2){
+    left:-30px;
+    opacity:0;
+}
+
+.open span:nth-child(3){
+    transform: rotate(-45deg);
+    top:-11px;
+}
+
+.menu{
+    height:100vh;
+    width:300px;
+    background-color:rgba(0, 0, 0, 0.8);
+    position:fixed;
+    display:table;
+    opacity: 0;
+    right:-50%;
+    z-index: 99;
+    color:rgba(240,240,240,1);
+    text-align: center;
+    transition:0.8s ease;
+}
+
+.showMenu{
+    opacity:1;
+    right:0;
+}
+
+.menuItems{
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menuItems h1{
+    margin-top:50px;
+}
+
+.menuItems a{
+    text-decoration: none;
+    color:rgba(240,240,240,1);
+}
+
+.menuItems .logo{
+    height: auto;
+    max-width:20%;
+    margin-top:50px;
+}
+
+.menu .menuLinks{
+    position: absolute;
+    bottom:0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+
+.menu .menuLinks a{
+    margin:0px 20px;
+    transition: 0.25s;
+}
+
+.menu a:hover{
+    color:#E14658;
+}
+
+/* MAIN */
+
+#main{
+    background-color:rgba(0,0,0,1);
+    padding-bottom: 100px;
+}
+
+#main h1{
+    text-align: center;
+    font-size: 3em;
+    color:rgba(240,240,240,1);
+    padding: 100px 0;
+    font-family: "breve";
+}
+
+#main p{
+    text-align: justify;
+    padding:0px 0px 50px 0px;
+}
+
+#main .col-md-4{
+    font-size: 1.5em;
+}
+
+#main a{
+    color:rgba(240,240,240,1);
+    font-size: 2em;
+    display: inline-block;
+    padding-bottom:50px;
+    transition: 0.25s;
+}
+
+#main a:hover{
+    transform: scale(1.2);
+    color:#E14658;
+}
+
+.margin-top{
+    padding-top: 35px;
+}
+
+/* ARTISTS */
+
+#artists{
+    background-color: rgba(0,0,0,1);
+}
+
+#artists .artistJumbo{
+    height:300px;
+    width:100%;
+    background-image: url(../img/artistJumbo.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin-bottom:100px;
+}
+
+#artists .two{
+    background-image: url(../img/artistJumbo3.jpg);
+    text-decoration: none;
+}
+
+#artists .two a{
+    color:rgba(240,240,240,1);
+}
+
+#artists .artistJumbo h1{
+    line-height: 300px;
+    font-family: "breve";
+    font-size:3em;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color:rgba(240,240,240,1);
+}
+
+#artists .col-md-4{
+    padding:20px;
+    margin-top:20px;
+}
+
+#artists .row p{
+    text-transform: uppercase;
+}
+
+#artists .col-md-4 h3, #artists .col-md-4 p{
+    text-align: center;
+    display: block;
+    margin-top:20px;
+}
+
+#artists .teamImg{
+    width:200px;
+    height:200px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin:0 auto;
+}
+
+#artists .teamImg a{
+    width: 100%;
+    height: 100%;
+    display: table;
+    border-radius: 50%;
+    background:rgba(0,0,0,0.3);
+    text-decoration: none;
+    color:rgba(240,240,240,1);
+    opacity:0;
+    margin-left:-50px;
+    text-align: center;
+    transition: 0.25s;
+}
+
+#artists .teamImg a:hover{
+    margin-left:0px;
+    opacity:1;
+}
+
+#artists .teamImg a i{
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 3em;
+}
+
+#artists .dalibor{
+    background-image: url("../img/artist/dalibor.jpg");
+}
+
+#artists .julo{
+    background-image: url("../img/artist/tatooman.jpg");
+}
+
+#artists .adam{
+    background-image: url("../img/artist/adam.jpg");
+}
+
+#artists .maio{
+    background-image: url("../img/artist/maio.jpg");
+}
+
+#artists .adela{
+    background-image: url("../img/artist/adela.jpg");
+}
+
+#artists .lucka{
+    background-image: url("../img/artist/lucka.jpg");
+}
+
+#artists .vilo{
+    background-image: url("../img/artist/vilo.jpg");
+}
+
+#artists h1{
+    text-align: center;
+    font-family: "breve";
+    padding-bottom:100px;
+}
+
+#artists p{
+    text-align: justify;
+}
+
+#artists .cennikP{
+    padding-bottom:100px;
+}
+
+/* FOOTER */
+
+#footer{
+    background-color:black;
+    position:relative;
+    width: 100%;
+    height:400px;
+}
+
+#footer .contactInfo{
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#footer .contactInfo a{
+    color:rgba(240,240,240,1);
+}
+
+#footer h1{
+    font-family: "breve";
+    padding: 50px 0 20px 0;
+}
+
+#footer .credit{
+    position: absolute;
+    text-align: center;
+    color:rgba(240,240,240,1);
+    font-size:0.6em;
+    letter-spacing: 5px;
+    width:100%;
+    bottom:30px;
+}
+
+#footer .advert{
+    position: absolute;
+    text-align: center;
+    color:rgba(240,240,240,1);
+    font-size:0.6em;
+    width:100%;
+    letter-spacing: 5px;
+    bottom:10px;
+}
+
+#footer .menuLinks{
+    position: absolute;
+    bottom:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+}
+
+#footer .menuLinks a{
+    color:rgba(240,240,240,1);
+    margin-right:20px;
+    transition: 0.25s;
+}
+
+#footer .menuLinks a:hover{
+    color: #E9168C;
+}
+
+#footer .advert a{
+    text-decoration: none;
+    color:#E14658;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width : 550px) {
+    #header{
+        background-attachment: inherit;
+    }
+    #artists .artistJumbo,#artists .two{
+        background-attachment: inherit;
+    }
+    .layer h1{
+        font-size: 3em;
+    }
+    .layer p{
+        margin:0 20px;
+    }
+    .layer .portfolioBtn{
+        margin-top:20px;
+    }
+    
+    .layer .logo{
+        width: 100px;
+    }
+    #footer .contactIcons i{
+    margin: 0 55px;
+    
+    }
+    #footer .contactInfo p{
+    display: inline;
+    margin: 0 10px 0 10px;
+    color:rgba(240,240,240,1);
+    font-size:0.8em;
+    }
+}
